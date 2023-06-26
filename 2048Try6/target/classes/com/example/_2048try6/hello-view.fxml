@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml"
+            styleClass="mypane" fx:controller="com.example._2048try6.HelloController" onKeyPressed="#HandleKeys"
+            stylesheets="@../../../Sheetstyle.css">
+
+    <Label fx:id="Score" text="score : 0" layoutX="170" layoutY="16" stylesheets="@../../../styles.css"/>
+    <Button fx:id="reset" text="reset" onMouseClicked="#onHelloButtonClick"
+            minHeight="40"
+            layoutX="90" layoutY="10" stylesheets="@../../../styles.css"/>
+    <Button fx:id="debug" text="debug" onMouseClicked="#onHelloButtonClick"
+            minHeight="40"
+            layoutX="10" layoutY="10" stylesheets="@../../../styles.css"/>
+    <Button fx:id="back" stylesheets="@../../../backStyle.css" minWidth="300" minHeight="302"
+            layoutX="0" layoutY="60"/>
+    <Button fx:id="B00" styleClass="B2048" stylesheets="@../../../blockStyle.css" minWidth="62.5" minHeight="62.5"
+            layoutY="70" layoutX="10"/>
+    <Button fx:id="B01" styleClass="B2048" stylesheets="@../../../blockStyle.css" minWidth="62.5" minHeight="62.5"
+            layoutY="142.5" layoutX="10"/>
+    <Button fx:id="B02" styleClass="B2048" stylesheets="@../../../blockStyle.css" minWidth="62.5" minHeight="62.5"
+            layoutY="215" layoutX="10"/>
+    <Button fx:id="B03" styleClass="B2048" stylesheets="@../../../blockStyle.css" minWidth="62.5" minHeight="62.5"
+            layoutY="287.5" layoutX="10"/>
+    <Button fx:id="B10" styleClass="B2048" stylesheets="@../../../blockStyle.css" minWidth="62.5" minHeight="62.5"
+            layoutY="70" layoutX="82.5"/>
+    <Button fx:id="B11" styleClass="B2048" stylesheets="@../../../blockStyle.css" minWidth="62.5" minHeight="62.5"
+            layoutY="142.5" layoutX="82.5"/>
+    <Button fx:id="B12" styleClass="B2048" stylesheets="@../../../blockStyle.css" minWidth="62.5" minHeight="62.5"
+            layoutY="215" layoutX="82.5"/>
+    <Button fx:id="B13" styleClass="B2048" stylesheets="@../../../blockStyle.css" minWidth="62.5" minHeight="62.5"
+            layoutY="287.5" layoutX="82.5"/>
+    <Button fx:id="B20" styleClass="B2048" stylesheets="@../../../blockStyle.css" minWidth="62.5" minHeight="62.5"
+            layoutY="70" layoutX="155"/>
+    <Button fx:id="B21" styleClass="B2048" stylesheets="@../../../blockStyle.css" minWidth="62.5" minHeight="62.5"
+            layoutY="142.5" layoutX="155"/>
+    <Button fx:id="B22" styleClass="B2048" stylesheets="@../../../blockStyle.css" minWidth="62.5" minHeight="62.5"
+            layoutY="215" layoutX="155"/>
+    <Button fx:id="B23" styleClass="B2048" stylesheets="@../../../blockStyle.css" minWidth="62.5" minHeight="62.5"
+            layoutY="287.5" layoutX="155"/>
+    <Button fx:id="B30" styleClass="B2048" stylesheets="@../../../blockStyle.css" minWidth="62.5" minHeight="62.5"
+            layoutY="70" layoutX="227.5"/>
+    <Button fx:id="B31" styleClass="B2048" stylesheets="@../../../blockStyle.css" minWidth="62.5" minHeight="62.5"
+            layoutY="142.5" layoutX="227.5"/>
+    <Button fx:id="B32" styleClass="B2048" stylesheets="@../../../blockStyle.css" minWidth="62.5" minHeight="62.5"
+            layoutY="215" layoutX="227.5"/>
+    <Button fx:id="B33" styleClass="B2048" stylesheets="@../../../blockStyle.css" minWidth="62.5" minHeight="62.5"
+            layoutY="287.5" layoutX="227.5"/>
+    <Pane fx:id="lostGame" visible="false">
+        <Button fx:id="ok"/>
+        <Button fx:id="cancel"/>
+    </Pane>
+</AnchorPane>
